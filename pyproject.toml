@@ -1,0 +1,20 @@
+[project]
+name = "student-risk"
+version = "0.1.0"
+description = "Predict at the start of the school year which students are at risk of failing"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1",
+    "gunicorn>=23.0",
+    "pandas>=2.2",
+    "scikit-learn==1.7.2",
+    "xgboost==3.0.5",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "requests>=2.32",
+]
